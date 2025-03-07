@@ -11,6 +11,7 @@ const authSchema = new mongoose.Schema({
 
   email: { type: String, required: true, unique: true },
   password: { type: String }, 
+ 
 // googleId: { type: String, sparse: true, unique: true }, 
   // googleProfile: { 
   //   emails: [{ value: String, verified: Boolean }],

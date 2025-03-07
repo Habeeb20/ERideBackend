@@ -23,6 +23,7 @@ const profileSchema = new mongoose.Schema(
         type:String,
        
     },
+    isOnline: { type: Boolean, default: false },
     question: {
       type: String,
       enum: ["student", "passenger"],
