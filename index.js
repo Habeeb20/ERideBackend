@@ -17,6 +17,7 @@ import Profile from "./models/auth/profileSchema.js";
 import User from "./models/auth/authSchema.js";
 import Trip from "./models/trip/tripSchema.js";
 import TripRoute from "./models/trip/tripSchema.js"
+import faceRoute from "./routes/face.route.js";
 dotenv.config();
 connectDb();
 
@@ -71,6 +72,7 @@ app.use(passport.session());
 app.use("/api/auth", authRoute);
 app.use("/api/profile", profileRoute)
 app.use("/api/trips", TripRoute)
+app.use("/api/auth", faceRoute)
 
 
 

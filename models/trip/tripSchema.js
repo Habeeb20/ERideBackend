@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 const tripSchema = new mongoose.Schema({
-    clientId: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },
+    clientId: { type: mongoose.Schema.Types.ObjectId, ref: "Auth", required: true },
     pickup: { address: String, lat: Number, lng: Number },
     destination: { address: String, lat: Number, lng: Number },
     distance: Number, 
