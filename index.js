@@ -74,7 +74,9 @@ app.use("/api/profile", profileRoute)
 app.use("/api/trips", TripRoute)
 app.use("/api/auth", faceRoute)
 
-
+app.get("/", (req, res) => {
+  res.send("app is listening on port....")
+})
 
 
 
